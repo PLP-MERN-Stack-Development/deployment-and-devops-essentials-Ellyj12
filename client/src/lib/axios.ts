@@ -1,7 +1,12 @@
+// config/api.js
 import axios from "axios";
 
+// Define the domain only
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
+  // Explicitly append /api here so you don't have to worry about it in .env
+  baseURL: `${BASE_URL}/api`, 
   withCredentials: true,
 });
 
