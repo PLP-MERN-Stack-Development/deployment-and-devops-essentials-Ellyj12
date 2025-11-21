@@ -1,3 +1,7 @@
+
+## 🚀 Live Deployment
+- **Frontend (Vercel):** [https://deployment-and-devops-essentials-el.vercel.app/items ]
+- **Backend API (Render):** [ https://backend-week-7.onrender.com/ ]
 ## 🛠 Deployment & Maintenance
 
 ### Deployment Pipeline
@@ -21,3 +25,15 @@ If a bad deployment breaks the production site:
 - **Database Backups:** MongoDB Atlas "Cloud Backups" enabled (Point-in-Time Recovery).
 - **Logs:** Production logs are accessible via the Render Dashboard console.
 - **Security:** HTTP headers secured via `helmet`; API access restricted via CORS `CLIENT_URL`.
+
+- ### API End Points
+# API Endpoints
+
+| Method | Endpoint               | Description                     |
+|--------|-------------------------|---------------------------------|
+| GET    | `/health`              | System Status Check             |
+| POST   | `/api/auth/register`   | User Registration               |
+| POST   | `/api/auth/login`      | User Login                      |
+| GET    | `/api/items`           | Fetch Items (Search/Filter)     |
+| POST   | `/api/swaps`           | Initiate Swap Request           |
+
